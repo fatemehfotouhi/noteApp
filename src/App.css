@@ -39,6 +39,11 @@
     margin-bottom: 1.5rem;
 }
 
+.error {
+    color: var(--rose-500);
+    font-size: .9rem;
+}
+
 .note-content {
     width: 60%;
 }
@@ -113,4 +118,26 @@
     margin-left: .5rem;
     background-color: var(--text-400);
     color: white;
+}
+
+
+
+@media only screen and (max-width: 630px) {
+    .note-header {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .note-app {
+        flex-direction: column;
+    }
+
+    .add-new-note {
+        width: 100%;
+    }
+
+    .note-content {
+        width: 100%;
+        margin-top: 3rem;
+    }
 }
